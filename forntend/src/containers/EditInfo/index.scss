@@ -1,0 +1,161 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：forum scss
+ */
+@import "../../../libs/scss/rem";
+
+.editInfo {
+    height: 100%;
+    background: #fff;
+
+    .edit {
+        font-size: rem(28);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: rem(85);
+        padding: 0 rem(20);
+        border-bottom: 1px solid rgb(239, 239, 239);
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .imgSpan {
+                border: rem(1) solid #ccc;
+                border-radius: 50%;
+                width: rem(60);
+                height: rem(60);
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            span {
+                color: rgb(102, 102, 102);
+            }
+
+            i {
+                color: rgb(209, 209, 209);
+                font-size: rem(25);
+                margin-left: rem(20);
+            }
+        }
+    }
+
+    .alert {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .chooseImg,
+        .updateGender,
+        .updateName {
+            animation-duration: 0.3s;
+            animation-name: pushChoose;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            text-align: center;
+            font-size: rem(27);
+
+            div {
+                width: 100%;
+                background: #fff;
+                height: rem(85);
+                border-bottom: 1px solid rgb(239, 239, 239);
+                position: relative;
+                line-height: rem(95);
+
+                input {
+                    width: 100%;
+                    height: rem(85);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+
+            .genderChoice {
+                height: rem(170);
+
+                span {
+                    border-bottom: 1px solid rgb(239, 239, 239);
+                    height: rem(85);
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                .active {
+                    background: rgba(34, 165, 255, 0.33);
+                }
+            }
+
+            .cancel {
+                border-top: 5px solid rgb(239, 239, 239);
+                line-height: rem(95);
+                display: inline-block;
+                width: 100%;
+                height: rem(85);
+            }
+
+            .changeNameInput {
+                padding-left: rem(18);
+                border: none;
+                outline: none;
+                width: 80%;
+                height: rem(60);
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                opacity: 1;
+                font-size: rem(25);
+            }
+
+            .confirm {
+                display: inline-block;
+                position: absolute;
+                right: rem(18);
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 10%;
+                height: rem(40);
+                line-height: rem(43);
+                color: rgb(34, 148, 255);
+                border: 1px solid rgb(34, 148, 255);
+                border-radius: rem(10);
+                font-size: rem(20);
+            }
+        }
+    }
+}
+
+@keyframes pushChoose {
+    from {
+        transform: translateY(rem(300));
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

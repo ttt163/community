@@ -1,0 +1,51 @@
+@import "../../../libs/scss/rem";
+
+.fullImgDiv {
+    border: 1px solid rgba(111, 111, 111, 0.1);
+    margin: 0 rem(15) rem(15) 0;
+    display: inline-block;
+    width: rem(150);
+    height: rem(150);
+    font-size: 0;
+
+    &.big {
+        width: auto;
+        height: auto;
+    }
+
+    .imgBg {
+        touch-action: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transition: 0.8s;
+        animation-duration: 0.5s;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            width: auto;
+            //width: 100%;
+            max-width: rem(610) !important;
+            background: #fff;
+        }
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,77 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/7/31
+ * Description：login
+ */
+@import "../../../libs/scss/rem";
+
+.login-main {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+
+    .login-content {
+        width: rem(520);
+        height: rem(300);
+        background: #fff;
+        position: absolute;
+        margin: auto;
+        padding: rem(40);
+        border-radius: rem(7);
+        top: rem(-150);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+
+        .logo {
+            margin-bottom: rem(15);
+            width: rem(180);
+            margin-right: auto;
+            margin-left: auto;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .login-btn {
+            background: #f6a201;
+            color: #fff;
+            width: rem(400);
+            display: inline-block;
+            //margin-top: rem(15);
+            border-radius: rem(8);
+            text-align: center;
+            padding: rem(10) 0;
+        }
+
+        .input-group {
+            display: inline-block;
+            border: 1px solid #d2d2d2;
+            border-radius: rem(5);
+            box-sizing: border-box;
+            margin-bottom: rem(15);
+            padding: rem(7) rem(12);
+            width: rem(400);
+            text-align: initial;
+
+            i {
+                margin-right: rem(20);
+                font-size: rem(30);
+                color: #d2d2d2;
+            }
+
+            input {
+                border: 0 !important;
+                outline: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import "../../../libs/scss/rem";
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: rem(1) solid #ccc;
+    height: rem(83);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        width: 33.3%;
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        color: #ccc;
+
+        &.active {
+            color: rgb(0, 132, 255);
+        }
+
+        span {
+            display: block;
+            font-size: rem(21);
+        }
+    }
+}
+
+// 横屏添加 landscape 类
+.landscape {
+    .page-footer {
+        bottom: inherit;
+        left: 0;
+        top: 0;
+        border-top: none;
+        border-right: 1px solid #ccc;
+        height: 100%;
+        width: rem(50);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        div {
+            width: 100%;
+
+            a {
+                height: 33.33%;
+                width: 100%;
+
+                span {
+                    font-size: rem(11);
+                }
+            }
+        }
+    }
+}

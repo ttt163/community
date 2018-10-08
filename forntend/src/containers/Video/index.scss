@@ -1,0 +1,17 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：forum scss
+ */
+@import "../../../libs/scss/rem";
+
+.video {
+    position: absolute;
+    width: rem(300);
+    height: rem(30);
+    top: rem(350);
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}

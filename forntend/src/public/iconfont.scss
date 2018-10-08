@@ -1,0 +1,40 @@
+@import "../../libs/scss/rem";
+
+@font-face {
+    font-family: 'iconfont';  /* project id 443973 */
+    src: url('//at.alicdn.com/t/font_443973_dwixr3yfolohto6r.eot');
+    src: url('//at.alicdn.com/t/font_443973_dwixr3yfolohto6r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_443973_dwixr3yfolohto6r.woff') format('woff'), url('//at.alicdn.com/t/font_443973_dwixr3yfolohto6r.ttf') format('truetype'), url('//at.alicdn.com/t/font_443973_dwixr3yfolohto6r.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: rem(36);
+}
+
+.landscape {
+    .iconfont {
+        font-size: rem(28);
+    }
+}
+
+.footer_forum:before { content: "\e637"; }
+.footer_video:before { content: "\e69b"; }
+.footer_personal:before { content: "\e62b"; }
+.view_img:before { content: "\e74b"; }
+.praise_img:before { content: "\e601"; }
+.discuss_img:before { content: "\e625"; }
+.icon-user:before { content: "\e714"; }
+.icon-pwd:before { content: "\e60c"; }
+//
+//.publishTopic {
+//    .deleteImg:before { content: "\e606"; }
+//}
+
+.topicDetail {
+    .writeButton:before { content: "\e616"; }
+}
+

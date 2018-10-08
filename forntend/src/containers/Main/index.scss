@@ -1,0 +1,22 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/7/27
+ * Description：main
+ */
+@import "../../../libs/scss/rem";
+
+.bbs-main {
+    width: 100%;
+    //height: 100%;
+    margin-bottom: rem(83);
+}
+
+// 横屏添加 landscape 类
+.landscape {
+    .bbs-main {
+        overflow: hidden;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
